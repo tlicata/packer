@@ -64,6 +64,7 @@
           "scripts/base.sh",
           "scripts/vagrant.sh",
           "scripts/virtualbox.sh",
+          "scripts/redis.sh",
           "scripts/cleanup.sh",
           "scripts/zerodisk.sh"
         ]

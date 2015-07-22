@@ -1,7 +1,7 @@
 {
   "variables": {
-    "aws_access_key": "",
-    "aws_secret_key": ""
+    "aws_access_key": "{{env `PACKER_AWS_KEY`}}",
+    "aws_secret_key": "{{env `PACKER_AWS_SECRET`}}"
   },
   "builders": [{
     "type": "amazon-ebs",

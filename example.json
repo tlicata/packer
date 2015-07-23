@@ -58,18 +58,24 @@
   "provisioners": [{
     "type": "shell",
     "execute_command": "echo 'vagrant'|sudo -S sh '{{.Path}}'",
-    "override": {
-      "virtualbox-iso": {
-        "scripts": [
-          "scripts/base.sh",
-          "scripts/vagrant.sh",
-          "scripts/virtualbox.sh",
-          "scripts/redis.sh",
-          "scripts/cleanup.sh",
-          "scripts/zerodisk.sh"
-        ]
-      }
-    }
+    "scripts": [
+      "scripts/base.sh",
+      "scripts/vagrant.sh",
+      "scripts/virtualbox.sh"
+    ],
+    "only": ["virtualbox-iso"]
+  }, {
+    "type": "shell",
+    "execute_command": "echo 'vagrant'|sudo -S sh '{{.Path}}'",
+    "script": "scripts/redis.sh"
+  }, {
+    "type": "shell",
+    "execute_command": "echo 'vagrant'|sudo -S sh '{{.Path}}'",
+    "scripts": [
+      "scripts/cleanup.sh",
+      "scripts/zerodisk.sh"
+    ],
+    "only": ["virtualbox-iso"]
   }],
   "post-processors": ["vagrant"]
 }

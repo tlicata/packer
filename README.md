@@ -11,6 +11,9 @@ This experiment installs my project on both an Amazon Machine Image
 and a Vagrant box for use as my production and development
 environments, respectively.
 
+The Vagrant post-processing and VirtualBox provisioning steps were
+modified from Shiguredo's [packer-templates][packer-templates].
+
 Steps
 -----
 
@@ -41,3 +44,4 @@ packer just built.
 [vagrant]: https://www.vagrantup.com/
 [packer]: https://www.packer.io/
 [packer-platforms]: https://www.packer.io/intro/platforms.html
+[packer-templates]: https://github.com/shiguredo/packer-templates

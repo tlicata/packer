@@ -59,6 +59,13 @@
     "type": "shell",
     "execute_command": "echo 'vagrant'|sudo -S sh '{{.Path}}'",
     "scripts": [
+      "scripts/apt-get.sh",
+      "scripts/path.sh"
+    ]
+  }, {
+    "type": "shell",
+    "execute_command": "echo 'vagrant'|sudo -S sh '{{.Path}}'",
+    "scripts": [
       "scripts/base.sh",
       "scripts/vagrant.sh",
       "scripts/virtualbox.sh"
@@ -67,7 +74,12 @@
   }, {
     "type": "shell",
     "execute_command": "echo 'vagrant'|sudo -S sh '{{.Path}}'",
-    "script": "scripts/redis.sh"
+    "scripts": [
+      "scripts/java.sh",
+      "scripts/git.sh",
+      "scripts/lein.sh",
+      "scripts/bidpitch.sh"
+    ]
   }, {
     "type": "shell",
     "execute_command": "echo 'vagrant'|sudo -S sh '{{.Path}}'",

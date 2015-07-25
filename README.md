@@ -21,11 +21,10 @@ Packer can take Ubuntu, run my installation scripts, then snapshot the
 results. Now, VirtualBox already had this capability, but Packer
 generalizes it to many different [platforms][packer-platforms].
 
-So this experiment installs my project on both an Amazon Machine Image
-and a VirtualBox-hosted Ubuntu. It takes both of them and installs
-Java, Git, Leiningen, and my project on each. Then a snapshot is
-created and I can either spin up an EC2 server from it or add it as a
-Vagrant base box and use it for my development environment.
+So this experiment installs my project and its dependencies on both an
+Amazon Machine Image and a VirtualBox-hosted Ubuntu. Then a snapshot
+is created and I can either spin up an EC2 server from it or add it as
+a Vagrant base box and use it for my development environment.
 
 Steps
 -----

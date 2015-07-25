@@ -1,15 +1,15 @@
-I wanted to deploy my site. I like building my development
-environments with Vagrant.
+I wanted to deploy a site. I like building development environments
+with Vagrant.
 
-The people who created Vagrant also have a product called
-Packer. Packer can be used to pre-assemble development environments
-for Vagrant. It can also be used to pre-essemble production
-environments Amazon EC2 (and many other
+The people who created [Vagrant][vagrant] also have a product called
+[Packer][packer]. Packer can be used to pre-assemble development
+environments for Vagrant. It can also be used to pre-assemble
+production environments for Amazon EC2 (and many other
 [platforms][packer-platforms]).
 
-This experiment installs my project and its dependencies on both an
-Amazon Machine Image and Vagrant environment that I can use for
-hosting my production site or development environment, respectively.
+This experiment installs my project on both an Amazon Machine Image
+and a Vagrant box for use as my production and development
+environments, respectively.
 
 Steps
 -----

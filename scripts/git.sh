@@ -1,1 +1,1 @@
-apt-get -y install git
+apt-get -y install git > /dev/null

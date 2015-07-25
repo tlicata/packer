@@ -1,2 +1,2 @@
-apt-get update
-apt-get -y upgrade
+apt-get update > /dev/null
+apt-get -y upgrade > /dev/null

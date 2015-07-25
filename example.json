@@ -59,8 +59,7 @@
     "type": "shell",
     "execute_command": "echo 'vagrant'|sudo -S sh '{{.Path}}'",
     "scripts": [
-      "scripts/apt-get.sh",
-      "scripts/path.sh"
+      "scripts/apt-get.sh"
     ]
   }, {
     "type": "shell",

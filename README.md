@@ -15,13 +15,13 @@ Steps
 -----
 
 ```sh
-packer $ packer build example.json
+packer build example.json
 ```
 
 This produces an AMI and a VirtualBox image.
 
 The AMI can be found under the "My AMIs" section in the AWS Web
-Console and be used to spin up and EC2 instance.
+Console and be used to spin up EC2 instances.
 
 The VirtualBox image can be added to Vagrant's box list:
 
@@ -32,11 +32,11 @@ vagrant box add packer-made-vbox packer_virtualbox-iso_virtualbox.box
 Then in a Vagrantfile elsewhere I can add the line
 
 ```sh
-  config.vm.box = "packer-made-vbox"
+config.vm.box = "packer-made-vbox"
 ```
 
 and then I can launch a virtual machine based off the image I just
-built that has my project pre-installed.
+built.
 
 [vagrant]: https://www.vagrantup.com/
 [packer]: https://www.packer.io/

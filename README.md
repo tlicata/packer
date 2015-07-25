@@ -35,8 +35,8 @@ Then in a Vagrantfile elsewhere I can add the line
 config.vm.box = "packer-made-vbox"
 ```
 
-and then I can launch a virtual machine based off the image I just
-built.
+and then I can launch a virtual machine based off the image that
+packer just built.
 
 [vagrant]: https://www.vagrantup.com/
 [packer]: https://www.packer.io/

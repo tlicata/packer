@@ -76,7 +76,11 @@
     "execute_command": "echo 'vagrant'|sudo -S sh '{{.Path}}'",
     "scripts": [
       "scripts/java.sh",
-      "scripts/git.sh",
+      "scripts/git.sh"
+    ]
+  }, {
+    "type": "shell",
+    "scripts": [
       "scripts/lein.sh",
       "scripts/bidpitch.sh"
     ]

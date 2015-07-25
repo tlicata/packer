@@ -58,3 +58,7 @@ Vagrant.configure(2) do |config|
 
 and then I can launch a virtual machine based off the image I just
 built that has my project pre-installed.
+
+[vagrant]: https://www.vagrantup.com/
+[packer]: https://www.packer.io/
+[packer-platforms]: https://www.packer.io/intro/platforms.html

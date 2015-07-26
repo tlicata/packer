@@ -92,5 +92,6 @@
     ],
     "only": ["virtualbox-iso"]
   }],
-  "post-processors": ["vagrant"]
+  "post-processors": [{"type": "vagrant",
+                       "only": ["virtualbox-iso"]}]
 }

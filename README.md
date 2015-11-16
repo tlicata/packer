@@ -1,6 +1,6 @@
-[Packer][packer] can be used to pre-assemble development environments
-for [Vagrant][vagrant]. It can also be used to pre-assemble production
-environments for Amazon EC2 (and other [platforms][packer-platforms]).
+[Packer][packer] can assemble development environments for
+[Vagrant][vagrant]. It can also assemble production environments for
+Amazon EC2 (and other [platforms][packer-platforms]).
 
 This installs a project on both an Amazon Machine Image and a Vagrant
 box for use as production and development environments, respectively.
@@ -28,9 +28,6 @@ Then in a Vagrantfile elsewhere I can add the line
 ```sh
 config.vm.box = "packer-made-vbox"
 ```
-
-and then I can launch a virtual machine based off the image that
-packer just built.
 
 [vagrant]: https://www.vagrantup.com/
 [packer]: https://www.packer.io/
